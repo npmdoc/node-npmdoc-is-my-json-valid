@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.is-my-json-valid.is-my-json-valid">
+            function <span class="apidocSignatureSpan"></span>is-my-json-valid
+            <span class="apidocSignatureSpan">(schema, opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.is-my-json-valid.filter">
             function <span class="apidocSignatureSpan">is-my-json-valid.</span>filter
             <span class="apidocSignatureSpan">(schema, opts)</span>
@@ -76,6 +85,22 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.is-my-json-valid" id="apidoc.module.is-my-json-valid">module is-my-json-valid</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.is-my-json-valid.is-my-json-valid" id="apidoc.element.is-my-json-valid.is-my-json-valid">
+        function <span class="apidocSignatureSpan"></span>is-my-json-valid
+        <span class="apidocSignatureSpan">(schema, opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">is-my-json-valid = function (schema, opts) {
+  if (typeof schema === &#x27;string&#x27;) schema = JSON.parse(schema)
+  return compile(schema, {}, schema, true, opts)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
