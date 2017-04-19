@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "is-my-json-valid",
-    "description": "api documentation for [is-my-json-valid (v2.16.0)](https://github.com/mafintosh/is-my-json-valid) [![npm package](https://img.shields.io/npm/v/npmdoc-is-my-json-valid.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-is-my-json-valid) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-is-my-json-valid.svg)](https://travis-ci.org/npmdoc/node-npmdoc-is-my-json-valid)",
+    "description": "#### api documentation for  [is-my-json-valid (v2.16.0)](https://github.com/mafintosh/is-my-json-valid)  [![npm package](https://img.shields.io/npm/v/npmdoc-is-my-json-valid.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-is-my-json-valid) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-is-my-json-valid.svg)](https://travis-ci.org/npmdoc/node-npmdoc-is-my-json-valid)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "is-my-json-valid": "*",
@@ -36,5 +36,5 @@
         "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
         "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
-    "version": "0.0.1"
+    "version": "0.0.2"
 }

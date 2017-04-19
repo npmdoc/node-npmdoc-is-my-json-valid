@@ -1,9 +1,14 @@
-# api documentation for  [is-my-json-valid (v2.16.0)](https://github.com/mafintosh/is-my-json-valid)  [![npm package](https://img.shields.io/npm/v/npmdoc-is-my-json-valid.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-is-my-json-valid) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-is-my-json-valid.svg)](https://travis-ci.org/npmdoc/node-npmdoc-is-my-json-valid)
+# npmdoc-is-my-json-valid
+
+#### api documentation for  [is-my-json-valid (v2.16.0)](https://github.com/mafintosh/is-my-json-valid)  [![npm package](https://img.shields.io/npm/v/npmdoc-is-my-json-valid.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-is-my-json-valid) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-is-my-json-valid.svg)](https://travis-ci.org/npmdoc/node-npmdoc-is-my-json-valid)
+
 #### A JSONSchema validator that uses code generation to be extremely fast
 
-[![NPM](https://nodei.co/npm/is-my-json-valid.png?downloads=true)](https://www.npmjs.com/package/is-my-json-valid)
+[![NPM](https://nodei.co/npm/is-my-json-valid.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/is-my-json-valid)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-is-my-json-valid/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-is-my-json-valid_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-is-my-json-valid/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-is-my-json-valid/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-is-my-json-valid/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-is-my-json-valid/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-is-my-json-valid/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-is-my-json-valid/build/screenCapture.npmPackageListing.svg)
 
@@ -49,37 +54,29 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "emilbay",
-            "email": "github@tixz.dk"
+            "name": "emilbay"
         },
         {
-            "name": "emilbayes",
-            "email": "github@tixz.dk"
+            "name": "emilbayes"
         },
         {
-            "name": "freeall",
-            "email": "freeall@gmail.com"
+            "name": "freeall"
         },
         {
-            "name": "linusu",
-            "email": "linus@folkdatorn.se"
+            "name": "linusu"
         },
         {
-            "name": "mafintosh",
-            "email": "mathiasbuus@gmail.com"
+            "name": "mafintosh"
         },
         {
-            "name": "watson",
-            "email": "w@tson.dk"
+            "name": "watson"
         },
         {
-            "name": "yoshuawuyts",
-            "email": "i@yoshuawuyts.com"
+            "name": "yoshuawuyts"
         }
     ],
     "name": "is-my-json-valid",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/mafintosh/is-my-json-valid.git"
@@ -89,49 +86,6 @@
     },
     "version": "2.16.0"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module is-my-json-valid](#apidoc.module.is-my-json-valid)
-1.  [function <span class="apidocSignatureSpan">is-my-json-valid.</span>filter (schema, opts)](#apidoc.element.is-my-json-valid.filter)
-
-
-
-# <a name="apidoc.module.is-my-json-valid"></a>[module is-my-json-valid](#apidoc.module.is-my-json-valid)
-
-#### <a name="apidoc.element.is-my-json-valid.filter"></a>[function <span class="apidocSignatureSpan">is-my-json-valid.</span>filter (schema, opts)](#apidoc.element.is-my-json-valid.filter)
-- description and source-code
-```javascript
-filter = function (schema, opts) {
-  var validate = module.exports(schema, xtend(opts, {filter: true}))
-  return function(sch) {
-    validate(sch)
-    return sch
-  }
-}
-```
-- example usage
-```shell
-...
-'''
-
-## Filtering away additional properties
-
-is-my-json-valid supports filtering away properties not in the schema
-
-''' js
-var filter = validator.filter({
-  required: true,
-  type: 'object',
-  properties: {
-    hello: {type: 'string', required: true}
-  },
-  additionalProperties: false
-})
-...
 ```
 
 
