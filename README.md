@@ -84,7 +84,8 @@
     "scripts": {
         "test": "tape test/*.js"
     },
-    "version": "2.16.0"
+    "version": "2.16.0",
+    "bin": {}
 }
 ```
 
